@@ -3,8 +3,8 @@ import React, {useState } from "react";
 import './ExpenseForm.css';
 
 const ExpenseForm = () => {
-    const [enteredTitle, setEnterTitle] = useState('');
-    const [enteredAmount, setEnterAmount] = useState('');
+    const [enteredTitle, setEnteredTitle] = useState('');
+    const [enteredAmount, setEnteredAmount] = useState('');
     const [enteredDate, setEnteredDate] = useState('');
     // const [userInput, setUserInput] = useState({
     //     enteredTitle: '',
@@ -15,7 +15,7 @@ const ExpenseForm = () => {
 
 
     const titleChangeHandler = (event) => {
-        setEnterTitle(event.target.value);
+        setEnteredTitle(event.target.value);
         // setUserInput({
         //     ...userInput,
         //     enteredTitle: event.target.value
@@ -26,7 +26,7 @@ const ExpenseForm = () => {
     };
 
     const amountChangeHandler = (event) => {
-        setEnterAmount(event.target.value);
+        setEnteredAmount(event.target.value);
         // setUserInput({
         //     ...userInput,
         //     enteredAmount: event.target.value
@@ -51,6 +51,9 @@ const ExpenseForm = () => {
         };
 
         console.log(expenseData);
+        setEnteredTitle('');
+        setEnteredAmount('');
+        setEnteredDate('');
     };
 
 
@@ -59,12 +62,18 @@ const ExpenseForm = () => {
         <div className='new-expense__controls'>
             <div className="new-expense__controls">
                 <label>Title</label>
-                <input type='text' onChange={titleChangeHandler} />
+                <input type='text' value={enteredTitle}
+                onChange={titleChangeHandler} />
             </div>
 
             <div className='new-expense__controls'>
                 <label>Amount</label>
-                <input type='number' min = "0.01" step = "0.01" onChange={amountChangeHandler} />
+                <input
+                type='number'
+                min = "0.01"
+                step = "0.01"
+                value={enteredAmount}
+                onChange={amountChangeHandler} />
             </div>
 
             <div className='new-expense__controls'>
