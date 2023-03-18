@@ -8,6 +8,10 @@ import ExpensesFilter from './ExpensesFilter';
 import './ExpensesFilter.css';
 
 const Expenses = (props) => {
+  const filterChangeHandler = selectedYear => {
+    console.log('Expenses.js');
+    console.log(selectedYear);
+  }
     return (
       <div>
         <Card className="expenses">
