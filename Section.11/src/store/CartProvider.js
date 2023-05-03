@@ -1,11 +1,14 @@
 import CartContext from "./cart-context";
 
 const CartProvider = props => {
-    const CartContext ={};
+    const CartContext = {};
 
-    return <CartContext.Provider>
-        {props.children}
-    </CartContext.Provider>
+    return (
+        <CartContext.Provider>
+            {props.children}
+
+        </CartContext.Provider>
+    );
 };
 
 export default CartProvider
