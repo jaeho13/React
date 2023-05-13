@@ -13,7 +13,9 @@ const ForwardCounter = () => {
     return () => clearInterval(interval);
   }, []);
 
-  return <Card>{counter}</Card>;
+  return (
+    <Card>{counter}</Card>
+    );
 };
 
 export default ForwardCounter;
