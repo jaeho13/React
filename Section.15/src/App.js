@@ -8,7 +8,7 @@ function App() {
       <ForwardCounter />
       <BackwardCounter />
     </React.Fragment>
-  );
-}
+  )
+};
 
 export default App;
