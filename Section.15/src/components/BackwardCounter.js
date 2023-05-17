@@ -17,9 +17,7 @@ const BackwardCounter = () => {
   }, []);
 
 
-  return (
-    <Card>{counter}</Card>;
-  )
+  return <Card>{counter}</Card>;
 };
 
 export default BackwardCounter;
