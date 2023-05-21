@@ -4,10 +4,10 @@ import ForwardCounter from './components/ForwardCounter';
 
 function App() {
   return (
-    <React.Fragment>
+    <>
       <ForwardCounter />
       <BackwardCounter />
-    </React.Fragment>
+    </>
   )
 };
 
