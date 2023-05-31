@@ -7,7 +7,7 @@ class User extends Component {
   }
 }
 
-// const User = (props) => {
+// const User = () => {
 //   return <li className={classes.user}>{props.name}</li>;
 // };
 
