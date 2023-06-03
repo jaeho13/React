@@ -4,10 +4,8 @@ import ForwardCounter from './components/ForwardCounter';
 
 function App() {
   return (
-    <>
       <ForwardCounter />
       <BackwardCounter />
-    </>
   )
 };
 
